@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "lint": "node_modules/eslint/bin/eslint.js src/*.js",
+        "prepush": "npm run lint",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -23,7 +24,8 @@
     },
     "homepage": "https://github.com/johnatanborges/Js-TDD-Course#readme",
     "devDependencies": {
-        "eslint": "^5.16.0"
+        "eslint": "^5.16.0",
+        "husky": "^2.1.0"
     },
     "dependencies": {
         "update": "^0.7.4"
